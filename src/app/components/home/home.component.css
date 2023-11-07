@@ -1,0 +1,10 @@
+.item{
+    border: 1px solid green;
+    padding: 5px;
+    margin: 5px;
+  }
+  #container img 
+  {
+   max-width: 250px;
+   max-height: 250px;
+  }

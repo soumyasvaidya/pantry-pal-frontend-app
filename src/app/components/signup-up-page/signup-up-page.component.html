@@ -1,0 +1,26 @@
+<div>
+    <h1>Hello Welcome </h1>
+     <h3>Create An Account</h3>
+       <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+         <div>
+           <label for="email">Email</label>
+           <input formControlName="email"  type="email"  required>
+         </div>
+         <div>
+           <label for="userPasswd">Password</label>
+           <input formControlName="userPasswd"  type="password">
+         </div>
+         <div>
+         <label for="studentId">UMich ID</label>
+         <input formControlName="studentId"  type="text" required>
+       </div>
+       <div>
+        <label for="username">Username</label>
+        <input formControlName="username"  type="text" required>
+      </div>
+       
+         <button>Submit</button>
+         <span>Already have an account? 
+         <a routerLink="/login">Login</a></span>
+       </form>
+   </div>

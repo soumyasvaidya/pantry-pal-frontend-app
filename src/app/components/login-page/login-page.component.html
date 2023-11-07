@@ -1,0 +1,23 @@
+<div>
+    <h1>Login to your PantryPal App</h1>
+     <h3>Please enter your registered Email-Id and Password</h3>
+       <form  [formGroup]="loginForm" (ngSubmit)="login()"> 
+        <div>
+          <label for="email">Email</label>
+          <input formControlName="email"  required  type="email">
+          <label for="userPasswd">Password</label>
+          <input formControlName="userPasswd"  type="password">
+        </div>
+        <div>
+          <label for="userrole">Role</label>
+<select formControlName="userrole"  name="Role">
+  <option value="STUDENT">Student</option>
+  <option value="ADMIN">Admin</option>
+
+</select>
+        </div>
+        <button>Submit</button>
+        <span>Don't have an account? 
+        <a routerLink="/signUp">Register</a></span>
+      </form>
+  </div>
